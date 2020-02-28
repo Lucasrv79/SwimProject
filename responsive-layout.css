@@ -1,0 +1,301 @@
+* {box-sizing: border-box;}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+header {
+    background-color: skyblue;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+	height:200px
+}
+
+header h2{width:80%;float:left;text-align:center;}
+header img{
+	width:20%;
+float:left;
+}
+.clear{clear:both}
+
+/* Create three equal columns that floats next to each other */
+.column2, .column3 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+	margin: 0 auto;
+   /* Should be removed. Only for demonstration */
+}
+.column3{
+	width:33.3%;
+	text-align:center;
+}
+
+/* Clear floats after the columns */
+.row:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row:after { /* create content after row, white content */
+    content: " ";
+    display: table;
+    clear: both;
+}
+/* Style the footer */
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+nav ul{
+	margin: 10px;
+	padding: 2px;
+	list-style-type: none;
+	text-align: center;
+	}
+nav ul li { 
+	display: inline; 
+	margin:10px 0;
+}
+
+nav ul li a { 
+	text-decoration: blue; 
+	padding: 5px;
+	color: #fff;
+	background-color: #036;
+	}
+nav ul li a:hover	{
+	color: #fff;
+	background-color: #369;
+	}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column2, .column3, input[type=submit] {
+		width: 100%;
+		margin-top:0;
+	}
+	footer{
+		
+		background: tomato;
+		color:white;
+		}
+    nav ul{ text-align:center}
+	nav ul li{display:block}
+	nav ul li a{display:block}
+	
+	
+}
+/* New CSS*/
+input[type=text], select, textarea {
+width : 100% ;
+padding : 12px ;
+border : 1px solid #ccc ;
+margin-top : 6px ;
+margin-bottom : 16px ;
+resize : vertical ;
+}
+input[type=submit] {
+background-color : #4CAF50 ;
+color : white ;
+padding : 12px 20px ; border : none ;
+cursor : pointer ;
+}
+input[type=submit]:hover {
+background-color : #45a049 ;
+}
+.element {
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+	from {background-color: #0606E8;}
+	to {background-color: #14C8FF;}
+}
+
+/* Styling the contact container */
+.contact-container {
+background-color : #f2f2f2 ;
+padding : 10px ;
+}
+/* Create two columns that float next to each other */
+.column {
+float : left ;
+width : 50% ;
+margin-top : 6px ;
+padding : 20px ;
+}
+/* Clear floats after the columns */
+.row:after {
+content : "" ;
+display : table ;
+clear : both ;
+}
+
+.main_container {
+  height: 46px;
+  width: auto;
+  padding: 3px;
+  margin: 2px;
+  max-width: 300px;
+  background-color: #555555;
+  align-content: center;
+}
+.container_inner {
+  height: auto;
+  border: none;
+  background-color: #555555;
+  max-width: 290px;
+  vertical-align: center;
+  padding-top: 12px;
+  padding-left: 10px;
+  align-content: center;
+}
+ .num_tiles {
+  width:30px;
+  height: 30px;
+  background-color: #888888;
+  color: #FF0300;
+  font-size: 22px;
+  text-align: center;
+  line-height: 20px;
+  padding: 3px;
+  margin: 1.5px;
+  font-family: verdana;
+  vertical-align: center;
+}
+.button {
+	-moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
+	-webkit-box-shadow: 0px 1px 0px 0px #f0f7fa;
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #33bdef), color-stop(1, #019ad2));
+	background:-moz-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+	background:-webkit-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+	background:-o-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+	background:-ms-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bdef', endColorstr='#019ad2',GradientType=0);
+	background-color:#33bdef;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+}
+.button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #019ad2), color-stop(1, #33bdef));
+	background:-moz-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+	background:-webkit-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+	background:-o-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+	background:-ms-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#019ad2', endColorstr='#33bdef',GradientType=0);
+	background-color:#019ad2;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

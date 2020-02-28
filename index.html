@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                                              <!-- Head-->
+	<meta charset="utf-8"/>
+	<title> Rathimines College Swimming Team </title>
+	<meta name="description" content="the Website of Rathimines College Swimmin Team"> <!-- Open and close tag-->
+	<!-- Link to Your CSS document-->
+	<link href="responsive-layout.css" rel="stylesheet"/>
+<script>
+		function checkBrowser(){
+		if ((navigator.userAgent.indexOf( "Opera" ) ||
+		navigator.userAgent.indexOf( 'OPR' )) != -1 )
+		{
+		alert( 'Opera' );
+		//or write to the page element demo, therefore preventing a popup
+		document.getElementById( "demo" ).innerHTML = "Opera" ;
+		}
+		else if (navigator.userAgent.indexOf("Chrome") != -1 )
+		{
+		alert( 'Chrome' );
+		document.getElementById( "demo" ).innerHTML="Chrome" ;
+		}
+		else if (navigator.userAgent.indexOf( "Safari" ) != -1)
+		{
+		alert( 'Safari' );
+		}
+		else if (navigator.userAgent.indexOf( "Firefox" ) != -1 )
+		{
+		alert( 'Firefox' );
+		document.getElementById( "demo" ).innerHTML = "Firefox" ;
+		}
+		else if ((navigator.userAgent.indexOf( "MSIE" ) != -1 ) ||
+		(!! document.documentMode == true )) //IF IE > 10
+		{
+		alert( 'IE' );
+		}
+		else
+		{
+		alert( 'unknown' );
+		}
+	}
+</script>
+</head> 
+<!-- end head --> 
+<body onload="checkBrowser()"> <!-- <body onload="incrementCount(10)"> --> 
+	<header> <!-- we call now just the header now in HTML 5, we us to call with </div id= "header"....> -->
+		<img src="images/logo.jpg" alt=" ">
+		<h2 style>  Rathmines Swimming Team </h2>
+	</header>
+	<nav class="clear">
+		<div class="element">
+			<ul>
+				<li><a href="index.html"> Home </a></li>
+				<li><a href="trainningtips.html"> Trainning Tips </a></li>
+				<li><a href="references.html"> References </a></li>
+				<li><a href="contact.html"> Contact </a></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<section>	
+			<div class = "row">
+			
+				<div class = "column2" >
+					<img src="images/team1.jpg" width="440" alt="team 1">
+				</div>				
+				<div class = "column2" > 
+						<h2> Welcome to Rathmines Swimming Team</h2>
+						<p> This is the website with all the information about Rathmines Swimming Team, dates and times for swimming sessions, our location, training tips and some fun too, so if you are studying in Rathmines Colleges and you have some knowledge in: Front Crawl - Backstroke, Breaststroke and Butterfly - and do you want to have fun and trainning on just CLICK the button and Join Us!!!</p>
+						<a href="contact.html" class="button"> Join Us </a> 
+				</div>
+			</div>
+			
+		</section>
+	</main>
+	
+	
+		<footer>
+			  <p>Footer</p> <!-- we call now just the footer now in HTML 5,  we us to call with </div id= "footer"....>-->
+			  <a href="http://www.reliablecounter.com" target="_blank"><img src="https://www.reliablecounter.com/count.php?page=76100609&digit=style/plain/20/&reloads=0" alt="" title="" ></a><br /><a href="http://www.reliablecounter.com/blog/industrial-lighting-fixtures-improve-efficiency-productivity" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;">reliablecounter.com</a>
+			  
+		</footer>
+
+	</body>
+</html>
+
+
+

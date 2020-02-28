@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                                              <!-- Cabeza-->
+	<meta charset="utf-8"/>
+	<title> Rathmines Swimming College  </title>
+	<meta name="description" content="the Website of Rathimines College Swimmin Team">
+	<link href="responsive-layout.css" rel="stylesheet"/><!-- Link to Your CSS document-->
+<script>
+}
+
+	function checkBrowser(){
+	if ((navigator.userAgent.indexOf( "Opera" ) ||
+	navigator.userAgent.indexOf( 'OPR' )) != -1 )
+	{
+	alert( 'Opera' );
+	//or write to the page element demo, therefore preventing a popup
+	document.getElementById( "demo" ).innerHTML = "Opera" ;
+	}
+	else if (navigator.userAgent.indexOf("Chrome") != -1 )
+	{
+	alert( 'Chrome' );
+	document.getElementById( "demo" ).innerHTML="Chrome" ;
+	}
+	else if (navigator.userAgent.indexOf( "Safari" ) != -1)
+	{
+	alert( 'Safari' );
+	}
+	else if (navigator.userAgent.indexOf( "Firefox" ) != -1 )
+	{
+	alert( 'Firefox' );
+	document.getElementById( "demo" ).innerHTML = "Firefox" ;
+	}
+	else if ((navigator.userAgent.indexOf( "MSIE" ) != -1 ) ||
+	(!! document.documentMode == true )) //IF IE > 10
+	{
+	alert( 'IE' );
+	}
+	else
+	{
+	alert( 'unknown' );
+	}
+}
+</script>
+</head> 
+
+<!-- end head --> 
+
+<body onload="checkBrowser()">
+
+	<header> <!-- we call now just the header now in HTML 5, we us to call with </div id= "header"....> -->
+		 <img src="images/logo.jpg" alt=" "> 
+		<h2> Trainning Tips </h2>
+	
+	</header>
+		<nav class="clear">
+		<div class="element">
+			<ul>
+				<li><a href="index.html"> Home </a></li>
+				<li><a href="trainningtips.html"> Trainning Tips	</a></li>
+				<li><a href="references.html"> References </a></li>
+				<li><a href="contact.html"> Contact </a></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<div class = "contact-container" >
+			<div style = "text-align:center" > 
+				<h2> Trainning Tips </h2>
+				<p> Some tips for your swimming routine : </p>
+				</div>
+					<div class = "row" >
+						<div class = "column2" ><!-- Column for trainning tips -->
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/e4iO34K1Ufo"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+						</div>
+					<div class = "column3" > <!-- Column for written tips -->
+					<p>	Tips from us : Toorpedo arms, streching arms on front and relax arm strokes</p>
+				</div>
+			</div>
+		</div>
+	</main>
+		<footer>
+			<p>Footer</p> <!-- we call now just the footer now in HTML 5,  we us to call with </div id= "footer"....>-->
+		</footer>
+</body>
+</html>
+
+<!-- check www.w3school-->
